@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>jdbcTeplate DB connect test</title>
+</head>
+<body>
+	<h1>DB서버시간 : [[${#calendars.format(today,'yy-MM-dd hh:mm:ss')}]]</h1>
+	<hr />
+	<h2>[[${count}]]</h2>
+	<ol>
+		<li th:each="vo : ${voList}">[[${vo}]]</li>
+	</ol>
+	<div th:each="vo : ${voList}">
+		<p>[[${vo}]]</p>
+	</div>
+</body>
+</html>
