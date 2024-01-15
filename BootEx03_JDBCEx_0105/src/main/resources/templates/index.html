@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>DB 연결하기</title>
+</head>
+<body>
+	<h1>Hello Spring JDBC!!!</h1>
+	<hr />
+	<h2>서버시간 : [[${#calendars.format(date1,'yyyy년 MM월 dd일(EEEE) hh:mm:ss')}]]</h2>
+	<h2>DB 서버시간 1 : [[${#calendars.format(date2,'yyyy년 MM월 dd일(EEEE) hh:mm:ss')}]]</h2>
+	<h2>DB 서버시간 2 : [[${#calendars.format(date3,'yyyy년 MM월 dd일(EEEE) hh:mm:ss')}]]</h2>
+	<h2>DB 서버시간 3 : [[${#calendars.format(date4,'yyyy년 MM월 dd일(EEEE) hh:mm:ss')}]]</h2>
+	<hr />
+	[[${vo1}]] <br />
+	[[${vo2}]] <br />
+</body>
+</html>
